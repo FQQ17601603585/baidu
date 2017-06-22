@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html{
+	background: #E1E1E1;
+}
+
+#header {
+  height: 6rem;
+  background: #02D1CB;
+  background-image: url(../img/headbg.jpg);
+  background-size: 100% 100%;
+  text-align: center; }
+  #header span {
+    display: inline-block;
+    width: 3.2rem;
+    height: 3.2rem;
+    margin-top: 30px; }
+    #header span img {
+      width: 100%; }
+
+#mainCont {
+  flex: 1;
+  overflow: auto; }
+
+#pay {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 0;
+  background: white; }
+  #pay div:first-child {
+    display: inline-block;
+    width: 50%;
+    text-align: center; }
+    #pay div:first-child img {
+      width: 1rem; }
+  #pay div:last-child {
+    display: inline-block;
+    width: 50%;
+    text-align: center; }
+    #pay div:last-child img {
+      width: 1rem; }
+
+#personList {
+  list-style: none; }
+  #personList li {
+    display: flex;
+    height: 2.2rem;
+    padding: 0 .5rem;
+    background: white;
+    line-height: 2.2rem;
+    margin-top: 1px; }
+    #personList li span:first-child {
+      width: 2rem;
+      height: 100%;
+      font-size: 1.2rem;
+      color: #ccc;
+      margin-top: .6rem; }
+    #personList li div {
+      flex-grow: 1;
+      display: flex; }
+      #personList li div p {
+        flex-grow: 1; }
+      #personList li div a {
+        text-align: end; }
+      #personList li div .a {
+        font-size: .5rem; }
+  #personList li:nth-child(1), #personList li:nth-child(6), #personList li:nth-child(4) {
+    margin-top: 10px; }
+
+/*# sourceMappingURL=my.css.map */

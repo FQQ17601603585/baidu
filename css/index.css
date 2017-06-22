@@ -1,0 +1,48 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "微软雅黑"; }
+html, body, #mainBox {
+  width: 100%;
+  height: 100%;
+  background: #F4F4F4;
+  display: flex;
+  -webkit-flex-direction: column; }
+  #mainCont {
+  width: 100%;
+  -webkit-flex-grow: 1;
+  overflow: auto; }
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+/*html, body, #box {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  -webkit-flex-direction: column;
+  }*/
+
+footer {
+  width: 100%;
+  height: 2.9rem;
+  text-align: center;
+  border-top: 1px solid #CACACA;
+   }
+  footer ul {
+  	width:100%;
+    display: flex;
+    -webkit-justify-content: space-around; }
+    footer ul li {
+      padding-top:0.2rem; }
+      footer ul li a {
+        font-size: 15px;
+        color: #686C70; }
+        footer ul li a .footericon {
+          font-size: 25px; }
+
+/*# sourceMappingURL=index.css.map */

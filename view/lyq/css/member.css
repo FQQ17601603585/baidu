@@ -1,0 +1,52 @@
+@charset "utf-8";
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+li{
+    list-style:none;
+}
+a{
+    text-decoration:none;
+}
+html,body{
+    width:100%;
+    height:100%;
+}
+#memberContent{
+    width:100%;
+    height:100%;
+    background:#EEEEEE;
+}
+#member{
+    padding:75px 0 40px 0;
+}
+#member #bg-ld{
+    width: 7.5rem;
+    height: 8.125rem;
+    background:url("//gss0.baidu.com/9rkZbzqaKgQUohGko9WTAnF6hhy/assets/card/fail.jpg");
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+    margin:0 auto;
+}
+#noneMember-title{
+    text-align:center;
+    /*font-family:"微软雅黑";*/
+    color:#999999;
+    font-size:14px;
+    letter-spacing:0;
+}
+#noneMember-btn{
+    padding:20px;
+}
+#moreMember{
+    display:inline-block;
+    background:#FF2244;
+    color:white;
+    width:100%;
+    height:40px;
+    border-radius:5px;
+    text-align:center;
+    line-height:40px;
+}

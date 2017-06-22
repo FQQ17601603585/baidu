@@ -1,0 +1,56 @@
+@charset "utf-8";
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+li{
+    list-style:none;
+}
+a{
+    text-decoration:none;
+}
+html,body{
+    width:100%;
+    height:100%;
+    background:#F2F4F5;
+}
+#sensitizeContent{
+    padding:0.8rem;
+}
+#inputCode{
+    width:70%;
+    height:38px;
+    border-radius:5px;
+    border:1px solid #CACACA;
+    padding-left:10px;
+}
+#addSensitizeBtn{
+    width:27%;
+    height:38px;
+    border-radius:5px;
+    background:#C1C1C1;
+    border:#C1C1C1;
+    font-size:16px;
+    color:white;
+}
+#useCodeStep{
+    color:#999999;
+    font-size:12px;
+    padding:20px 0;
+}
+#successCodeBox{
+    width:100%;
+}
+#successCode{
+    display:inline-block;
+    background:#FF2244;
+    color:white;
+    width:92%;
+    height:40px;
+    border-radius:5px;
+    text-align:center;
+    line-height:40px;
+    position:absolute;
+    bottom:30px;
+}

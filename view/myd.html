@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, 	minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta name="format-detection" content="telephone=no, email=no" />
+     	<meta name="apple-mobile-web-app-capable" content="yes"/>
+     	<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+		<title></title>
+		<link rel="stylesheet" href="../css/my.css" />
+		<link rel="stylesheet" href="../css/bootstrap.min.css" />
+		<script src="../js/iscroll5.probe.js"></script>
+	</head>
+	<body>
+		<div id="mainBox">
+			
+			<div id="header">
+					<span>
+						<img src="../img/my.png" alt="" />
+					</span>
+				
+			</div>
+			
+			<div id="mainCont">
+				<!--支付状态-->
+				<div id="pay">
+						<div id=" payment">
+							<img src="../img/fu.png" alt="" /><br />
+							待付款
+						</div>
+						<div id="Paid">
+							<img src="../img/1475052954836.png"/><br />
+							已付款
+						</div>
+				</div>
+				<!--个人中心列表-->
+				
+					<ul id="personList">
+							<li>
+								<span class="glyphicon glyphicon-cd"></span>
+								<div>
+										<p>我的会员卡</p>
+								<a href=""><span class="glyphicon glyphicon-menu-right a"></span></a>
+								</div>
+							
+							</li>
+							<li>
+								<span class="glyphicon glyphicon-cd"></span>
+								<div>
+										<p>我的会员卡</p>
+								<a href=""><span class="glyphicon glyphicon-menu-right a"></span></a>
+								</div>
+							
+							</li>	
+							<li>
+								<span class="glyphicon glyphicon-cd"></span>
+								<div>
+										<p>我的会员卡</p>
+								<a href=""><span class="glyphicon glyphicon-menu-right a"></span></a>
+								</div>
+							
+							</li>
+								<li>
+								<span class="glyphicon glyphicon-cd"></span>
+								<div>
+										<p>我的会员卡</p>
+								<a href=""><span class="glyphicon glyphicon-menu-right a"></span></a>
+								</div>
+							
+							</li>
+							<li>
+								<span class="glyphicon glyphicon-cd"></span>
+								<div>
+										<p>我的会员卡</p>
+								<a href=""><span class="glyphicon glyphicon-menu-right a"></span></a>
+								</div>
+							
+					
+							
+							
+					</ul>
+					<!--底部-->
+					<p id="bottom-btn">
+						<button class="btn btn-default">登录</button>
+						<button class="btn btn-default">注册</button>
+					</p>
+					<div style="text-align: center;">
+						<p>如有质疑，可致电（9:00-21:00）</p>
+						<p>客服电话：400-553-5468</p>
+					</div>
+					
+			
+			</div>
+			
+			
+			<div id="footer">
+				
+			</div>
+		</div>
+		<script>
+				(function(doc){
+						function changeSize(){
+							var size=doc.documentElement.clientWidth/320*20;
+							doc.querySelector('html').style.fontSize=size+'px';
+						}
+						//用户缩放浏览器窗口大小时
+						window.onresize=changeSize;
+						changeSize();
+					})(document);
+					
+		</script>
+		<script>
+			var a=new IScroll("#mainCont")
+
+		</script>
+	</body>
+</html>

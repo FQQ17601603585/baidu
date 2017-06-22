@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html, body, .box {
+  width: 100%;
+  height: 100%; }
+
+#detailsHead {
+  width: 100%;
+
+  line-height: 1.1rem; }
+  #detailsHead ul {
+    width: 100%;
+    display: flex;
+    padding: 1rem 0;
+    -webkit-flex-direction: row;
+    -webkit-justify-content: space-around; }
+    #detailsHead ul li {
+      list-style: none; }
+      #detailsHead ul li a {
+        text-decoration: none;
+        color: #000;
+        font-size: 1.75rem; }
+
+.content {
+  width: 100%; }
+  .content .top {
+    padding: .25rem;
+    position: relative;
+    width: 100%;
+    height: 20rem;
+    background: red;
+    background: rgba(115, 84, 55, 0.3); }
+    .content .top dl {
+      width: 100%;
+      display: flex;
+      -webkit-flex-direction: row; }
+      .content .top dl dt {
+        width: 40%; }
+        .content .top dl dt img {
+          width: 100%; }
+      .content .top dl dd {
+        margin-left: .25rem;
+        width: 60%;
+        font-size: .25rem; }
+        .content .top dl dd div {
+          margin-top: .4rem;
+          color: white;
+          font-size: .65rem; }
+          .content .top dl dd div:nth-child(1) {
+            font-size: .9rem; }
+          .content .top dl dd div:nth-child(2) {
+            color: #f79715; }
+    .content .top .three {
+      width: 100%;
+      display: flex;
+      -webkit-flex-direction: row;
+      -webkit-justify-content: space-around;
+      margin-top: .5rem; }
+      .content .top .three div {
+        /*width: 3.5rem;*/
+        height: 1.6rem;
+        border: 1px solid #F4F6F5;
+        border-radius: 5px;
+        text-align: center;
+        line-height: 1.6rem;
+        font-size: .6rem; }
+        .content .top .three div span {
+          color: white;
+          padding: .25rem; }
+  .content .text {
+    width: 100%;
+    height: 3.8rem;
+    padding: .5rem;
+    color: #303030;
+    font-size: .7rem;
+    overflow: hidden; }
+  .content .icon {
+    width: 100%;
+    text-align: center; }
+  .content .back {
+    width: 100%;
+    height: 1rem;
+    background: #f5f5f5; }
+
+.media {
+  width: 100%;
+  padding: 1.1rem; }
+  .media p {
+    width: 100%; }
+    .media p span {
+      display: inline-block; }
+      .media p span:nth-child(1) {
+        font-size: 1.7rem; }
+      .media p span:nth-child(2) {
+        font-size: 1.2rem;
+        margin-left: 15rem; }
+  .media .movie {
+    width: 100%;
+    display: flex;
+    -webkit-flex-direction: row;
+    -webkit-justify-content: space-around; }
+    .media .movie div {
+      width: 32%;
+      margin-bottom: 1rem;
+      text-align: center; }
+      .media .movie div img {
+        width: 100%; }
+
+/*# sourceMappingURL=details.css.map */

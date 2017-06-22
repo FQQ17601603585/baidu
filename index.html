@@ -1,0 +1,106 @@
+	<!DOCTYPE html>
+<html ng-app="myapp">
+	<head>
+		<meta charset="UTF-8">
+				<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, 	minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta name="format-detection" content="telephone=no, email=no" />
+     	<meta name="apple-mobile-web-app-capable" content="yes"/>
+     	<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+     	<style>
+     		.on{
+     			color: cornflowerblue;
+     		}
+     	</style>
+		<title></title>
+			<link rel="stylesheet" href="css/my.css" />
+			<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
+		
+		<!--sunyinge-->
+			<!--<link rel="stylesheet" href="css/movie.css" />-->
+			<link rel="stylesheet" href="css/waitplay.css" />
+			<link rel="stylesheet" href="css/movie.css" />
+			<link rel="stylesheet" href="css/cinema.css" />
+			<!--sunyinge-->
+		<script src="js/iscroll5.probe.js"></script>
+		<script src="js/angular.js"></script>
+		<script src="js/angular-route.js"></script>
+		
+		<!--gaoxiaowan-->
+		
+			<link rel="stylesheet" type="text/css" href="css/fanquan.css"/>
+     	
+     	<script src="js/lunbo.js"></script>
+     	<script src="js/zepto.min.js"></script>
+		<!--gaoxiaowan-->
+		<!--lidi-->
+
+		<link rel="stylesheet" href="css/shou.css" />
+		<link rel="stylesheet" href="css/swiper.min.css" />
+		<script src="js/swiper.min.js"></script>
+		<script src="js/jquery.min.js"></script>
+		<!--li.-->
+		
+		<!--樊倩倩-->
+		<link rel="stylesheet" href="css/show.css" />
+		<link rel="stylesheet" href="css/details.css" />
+		<!--樊倩倩-->
+	</head>
+	<body>
+<div id="mainBox">
+		
+		<div id="mainCont">
+			<div ng-view></div>
+		</div>
+		
+		
+		<!--尾部-->
+		   <footer>
+		   	    
+		   	    <ul id="lfooter">
+		            <li><a href="#/footer1"><i class="fa fa-thumbs-up footericon"></i><p>推荐</p></a></li>
+		            <li><a href="#/movie"><i class="fa fa-youtube-play footericon"></i><p>电影</p></a></li>
+		            <li><a href="#/show"><i class="fa fa-eye footericon"></i><p>演出</p></a></li>
+		            <li><a href="#/fanquan"><i class="fa fa-comments footericon"></i><p>饭圈</p></a></li>
+		            <li><a href="#/my"><i class="fa fa-user footericon"></i><p>我的</p></a></li>
+		        </ul>
+
+		   	
+		   </footer>
+		<!--尾部-->
+</div>
+		
+	
+		<script>
+			
+			
+				(function(doc){
+						function changeSize(){
+							var size=doc.documentElement.clientWidth/320*20;
+							doc.querySelector('html').style.fontSize=size+'px';
+						}
+						//用户缩放浏览器窗口大小时
+						window.onresize=changeSize;
+						changeSize();
+					})(document);
+		$("#lfooter>li").click(function(){
+//			 var index=$(this).index();
+            $(this).addClass("on").siblings().removeClass("on");
+           
+//            alert(box1);
+//            box[index].addClass("boxx").siblings().removeClass("boxx");
+//          for(var i=0;i<box.length;i++){
+//              box[i].className="";
+//          }
+        })
+	
+					
+			
+		</script>
+	</body>
+</html>
+<script src="js/controller/my.js"></script>
+<script src="js/gxw.js"></script>
+<!--<script src="js/ngRoute.js"></script>-->

@@ -1,0 +1,95 @@
+
+	<div class="movieBox">
+			<!--头部-->
+			  <div class="movieHead">
+			  	<div class="head">
+			  		<a href="javascript:viod(0)">北京市<i class="fa fa-fw fa-chevron-down"></i></a>
+				  	<span>
+				  		<a class="active">影片</a>
+				  		<a href="view/cinema.html">影院</a>
+				  	</span>
+				  	<a href="#"><i class="fa fa-fw fa-search"></i></a>
+			  	</div>
+			  	
+			  	<ul class="movieTit" ng-init="selected=0">
+			   	     	<li ng-repeat="item in movieTitle"><a  ng-class="{myA:selected == $index}" ng-click="show($index)">{{item.titleName}}</a></li>
+			   	</ul>
+			   
+			  </div>
+			<!--头部-->
+			
+			<!--内容区域-->
+			   <div class="movieCon" id="main">
+	   	        
+	   	        <div  ng-show="selected==$index" ng-repeat="item in movieTitle">  	        	 
+	   	         <div class="movie-swiper-container">
+			        <div class="swiper-wrapper">
+			            <div class="swiper-slide" ng-repeat="x in bannar track by $index">
+			            	<img src="img/{{x.imgs}}" />
+			            </div>
+			        </div>
+			        <div class="swiper-pagination"></div>
+			    </div>
+	   	         <!--{{item.movieCon}}-->
+	   	         
+	   	         
+	   	        
+	   	         
+	   	        
+			    
+			    <div class="moviesList">
+			    	
+			    	
+			    	 <div class="waitCon" ng-repeat="c in item.movieCon[0].title" >
+			     	  <div class="waitSlide">
+			     	  	   <p>{{c.tit}}</p>
+			     	  	   <div class="swiper-container2  swiper-container">
+					        <div class="swiper-wrapper">
+					            <div class="swiper-slide" ng-repeat="a in item.movieCon[0].hotMoive">
+					            	<img src="img/{{a.src}}" />
+					            	<p>{{a.txt1}}</p>
+					            	<p>{{a.txt2}} <a><i class="fa fa-fw fa-heart-o"></i></a></p>
+					            	<div class="wantSee">{{a.people}}</div>
+					            </div>
+					        </div>
+			     	  </div>
+			     </div>
+			     
+			     
+			    	<div class="movieList"  ng-repeat="j in item.movieCon[0].list">
+			    		<dl>
+			    			<dt>
+			    				<img src="img/{{j.img}}" /> 
+			    			</dt>
+			    			<dd>
+			    				<h4>{{j.h4One}}</h4>
+			    				<p class="score">
+			    					<i class="fa fa-fw fa-star"></i><i class="fa fa-fw fa-star"></i><i class="fa fa-fw fa-star"></i><i class="fa fa-fw fa-star"></i>
+			    					<sapn>{{j.Score}}</sapn>
+			    				</p>
+			    				<h4>{{j.h4Two}}</h4>
+			    				<h4>{{j.h4Three}}</h4>
+			    			</dd>
+			    		</dl>
+			    		<div class="Ticket">
+			    			<a href="view/fqq/view/buyTickets.html" >购票</a>
+			    		</div>
+			    	</div>
+			  </div>
+			  
+			  
+			   </div>
+			  
+			  
+			</div>
+			<!--内容区域-->
+		
+	</div>
+
+
+
+
+
+
+
+

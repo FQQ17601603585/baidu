@@ -1,0 +1,59 @@
+{
+  "banner":[
+    {"src":"banner1.jpg"},
+    {"src":"banner2.jpg"},
+    {"src":"banner3.jpg"},
+    {"src":"banner4.jpg"},
+    {"src":"banner5.jpg"},
+    {"src":"banner6.jpg"},
+    {"src":"banner7.jpg"}
+  ],
+  "iconFive":[
+    {"src":"icon1.png","iconText":"会员卡"},
+    {"src":"icon2.png","iconText":"商城"},
+    {"src":"icon3.png","iconText":"直播"},
+    {"src":"icon4.png","iconText":"视频"},
+    {"src":"icon5.png","iconText":"票房"}
+  ],
+  "allMovie":[
+    {"movieShop":"首都影院（昌平店）","address":"北京市昌平区鼓楼南环路金隅万科广场8层","distance":"7.3km"},
+    {"movieShop":"昌平保利影剧院（昌平店）","address":"北京市昌平区鼓楼南街佳莲时代广场","distance":"7.7km"},
+    {"movieShop":"大地影院（北京昌平菓岭假日广场店）","address":"北京市昌平区昌崔路203号菓岭广场4楼大地数字...","distance":"7.3km"}
+  ],
+  "hotMovie":{
+    "hot1":[
+      {"src":"hot1.jpg","title":"2017 Liam Gallagher北京..."},
+      {"src":"hot2.jpg","title":"开心麻花爆笑舞台剧《夏洛特..."},
+      {"src":"hot3.jpg","title":"ofo青睐北京演唱会"}
+    ],
+    "hot2":[
+      {"src":"hot4.jpg","title":"2017 Liam Gallagher北京..."},
+      {"src":"hot5.jpg","title":"开心麻花爆笑舞台剧《夏洛特..."},
+      {"src":"hot6.jpg","title":"ofo青睐北京演唱会"}
+    ],
+    "hot3":[
+      {"src":"hot7.jpg","title":"2017 Liam Gallagher北京..."},
+      {"src":"hot8.jpg","title":"开心麻花爆笑舞台剧《夏洛特..."},
+      {"src":"hot9.jpg","title":"ofo青睐北京演唱会"}
+    ]
+  },
+  "cheapMovie":{
+    "cheap1":[
+      {"src":"hot1.jpg","title":"开心麻花《爷们儿》爆笑舞台剧"},
+      {"src":"hot2.jpg","title":"大型滑稽戏《皇帝勿急急太监..."},
+      {"src":"hot3.jpg","title":"拿大顶第35轮专场-默剧《不言..."}
+    ],
+    "cheap2":[
+      {"src":"hot4.jpg","title":"开心麻花《爷们儿》爆笑舞台剧"},
+      {"src":"hot5.jpg","title":"【第二张只需50元】开心麻花..."},
+      {"src":"hot6.jpg","title":"【第二张只需50元】开心麻花..."}
+    ],
+    "cheap3":[
+      {"src":"hot4.jpg","title":"开心麻花《爷们儿》爆笑舞台剧"},
+      {"src":"hot5.jpg","title":"【第二张只需50元】开心麻花..."},
+      {"src":"hot6.jpg","title":"【第二张只需50元】开心麻花..."}
+    ]
+  }
+
+
+}

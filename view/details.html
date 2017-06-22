@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, 	minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta name="format-detection" content="telephone=no, email=no" />
+     	<meta name="apple-mobile-web-app-capable" content="yes"/>
+     	<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+     	<link rel="stylesheet" type="text/css" href="../css/details.css"/>
+     	<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css"/>
+     	<script src="../js/jquery.min.js"></script>
+     	<style type="text/css">
+     		body{
+     			font-family: "微软雅黑";
+     		}
+     		
+     	</style>
+		<title></title>
+		</head>
+		<body>
+			<div class="box">	
+				<div id="detailsHead">
+					<ul>
+						<li><a href="#">推荐</a></li>
+						<li><a href="#">分类</a></li>
+						<li><a href="#">我的</a></li>
+						<li><a href="#">搜索</a></li>
+					</ul>
+					
+				</div>
+				<div class="content">
+					<!---->
+					<div class="top">
+						<dl>
+							<dt><img src="../img/s1.jpg"/></dt>
+							<dd>
+								<div>摔跤吧! 爸爸</div>
+								<div>
+								<span class="fa fa-star"></span>
+								<span class="fa fa-star"></span>
+								<span class="fa fa-star"></span>
+								<span class="fa fa-star"></span>
+								<span class="fa fa-star"></span> 
+								  9.6</div>
+								<div>谁说女子不如男</div>
+								<div>类型：动作，家庭，喜剧</div>
+								<div>片长：140分钟</div>
+								<div>上映：2017-05-05</div>
+							</dd>
+						</dl>
+						<div class="three"><div><span class="fa fa-heart"></span>想看</div><div><span class="fa fa-star"></span>评分</div><div><span class="fa fa-comment"></span>饭团</div></div>
+						
+					</div>
+<!---->
+              <div class="text ">
+              	马哈维亚辛格伯（阿米尔汗）曾是印度国家摔跤冠军，因生活所迫放弃摔跤，他希望让儿子可以帮他实现梦想---赢得世界级金牌。结果生了4个女儿本以为梦想就此破碎的他却意外发现女儿升上天赋，决定不让女儿的的天赋浪费，像其他女孩一样智能洗衣做饭过一生。。。。。。
+              	
+              </div>
+              <div class="icon"><span class="fa fa-caret-down"></span> </div>
+<div class="back">
+					
+				</div>
+				</div>
+				<div class="media">
+					<p><span>其他电影 </span><span> 更多</span></p>
+					<div class="movie">
+					<div><img src='../img/s2.jpg'/><br />加勒比海盗</div>
+					<div><img src='../img/s5.jpg'/><br />加勒比海盗 </div>
+					<div><img src='../img/s4.jpg'/><br />加勒比海盗 </div>
+					</div>
+					<div class="movie">
+					<div><img src='../img/s7.jpg'/><br />加勒比海盗 </div>
+					<div><img src='../img/s8.jpg'/><br />加勒比海盗 </div>
+					<div><img src='../img/s6.jpg'/><br />加勒比海盗 </div>
+					</div>
+					
+				</div>
+			</div>
+			
+			
+		</body>
+	</html>
+	<script>
+		     (function(doc){
+						function changeSize(){
+							var size=doc.documentElement.clientWidth/320*10;
+							doc.querySelector('html').style.fontSize=size+'px';
+						}
+						//用户缩放浏览器窗口大小时
+						window.onresize=changeSize;
+						changeSize();						
+					})(document);
+        
+				
+						var tex=document.getElementsByClassName("text");
+					$('.icon').click(function(){
+						if($(".text").offsetHeight!=3.8+"rem"){
+							 $('.text').css('height','auto')
+						}else{
+							 $('.text').css('height','3rem')
+						}
+						})
+	</script>

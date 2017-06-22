@@ -1,0 +1,94 @@
+@charset "utf-8";
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+li{
+    list-style:none;
+}
+a{
+    text-decoration:none;
+}
+html,body{
+    width:100%;
+    height:100%;
+}
+.clearfix:after{
+    content:"";
+    clear:both;
+    display:block;
+    height:0;
+    visibility:hidden;
+}
+#voucherContent{
+    width:100%;
+    height:100%;
+    background:#EEEEEE;
+}
+#voucherHeader{
+    padding:0.8rem;
+}
+#voucher{
+    color:#0E0D0D;
+    font-size:16px;
+    font-weight:bolder;
+}
+#instruction{
+    color:#FF2244;
+    float:right;
+    font-size:16px;
+    font-weight:bolder;
+}
+#voucherSearch{
+    padding:0 0.8rem 0.8rem 0.8rem;
+}
+#inputSearch-voucher{
+    width:74%;
+    height:1.8rem;
+    border-radius:3px;
+    border:1px solid #CCCCCC;
+    padding-left:5px;
+    outline:none;
+}
+#voucherAdd{
+    color:white;
+    width:22%;
+    height:1.8rem;
+    font-size:16px;
+    border-radius:3px;
+    margin-left:0.2rem;
+    background:#FF2244;
+    border:1px solid #FF2244;
+}
+#noneVoucher{
+    width:100%;
+    padding:2rem 0;
+}
+#noneVoucherbgImg{
+    width: 7.5rem;
+    height: 8.125rem;
+    background:url("//gss0.baidu.com/9rkZbzqaKgQUohGko9WTAnF6hhy/assets/voucher/novoucher_part.png");
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+    margin:0 auto;
+}
+#voucherReturn{
+    width:45px;
+    height:45px;
+    position:absolute;
+    bottom:0;
+    right:0;
+    text-align:center;
+    background:#FF2244;
+    border-radius:50%;
+    padding-top:5px;
+}
+#voucherReturn i{
+    color:white;
+    font-size:20px;
+}
+#voucherReturn>a>p{
+    color:white;
+    font-size:12px;
+}

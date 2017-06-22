@@ -1,0 +1,112 @@
+
+		<div class="box">
+			<header>
+				<div>
+					<div class="left fa fa-fw fa-search"></div>
+					<div class="right">
+						<input type="text" placeholder="搜索饭圈" />
+					</div>
+				</div>
+			</header>
+			<div class="content">
+				<!--banner1、部分-->
+				<div class="banner1">
+					<img src="img/nuomi-sxl-c499211b.png" />
+					<div class="show">
+					<!--最后写数据，设计理念是这样的：1.最前面的div有固定的宽高2.用css动画就可以写3.settimeout规定的时间显示4.超出部分隐藏-->
+					   <ul>
+					   	  <li></li>
+					   </ul>
+					</div>
+				</div>
+				<!--banner2、部分-->
+				<div class="banner2 swiper-container">
+					<p id="dian">
+						<span class="on"></span>
+						<span></span>
+						<span></span>
+					</p>
+				   <ul id="imgbox">
+				   	 	<li ng-repeat="a in list.one">
+				   	 		<div class="list">
+				   	 			<div class="list_L"><p>{{a.p}}</p></div>
+				   	 			<div class="list_R">
+				   	 				<ul class="huangguan">
+				   	 					<li ng-repeat="b in a.lala">
+				   	 						<img src="{{b.star_img}}" />
+				   	 						<p>{{b.star_people}}</p>
+				   	 						<p>爱豆值<span>{{b.aidou}}</span></p>
+				   	 					</li>
+				   	 				</ul>
+				   	 			</div>
+				   	 		</div>
+				   	 	</li>
+				   </ul>
+				</div>
+				<!--直播活动的部分live-->
+				<div class="live">
+					<p>
+						<span>直播活动</span>
+						<i></i>
+						<i></i>
+						<i></i>
+					</p>
+					<a class="fa fa-fw fa-angle-right"></a>
+				</div>
+				<!--带图片的轮播图-->
+				<div class="img_live">
+					<ul>
+						<li ng-repeat="v in list.two">
+							<div class="l_left"><img src="{{v.left_img}}"></div>
+							<div class="l_right">
+								<p class="seven">{{v.name}}<br><span>{{v.number}}万人看过</span>
+								<p class="seven_2">
+									<span class="spn1"><b>来自：</b>{{v.from}}</span>
+									<span class="spn2">回放<a href="javascript:;"  class="fa fa-fw fa-play"></a></span>
+								</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!--可以切换的导航条-->
+				<div class="nav">
+					<ul>
+						<li><a href="#">饭圈</a></li>
+						<li><a href="#">视频</a></li>
+						<li><a href="#">关注</a></li>
+						<li><a href="#"  class="in">广场</a></li>
+					</ul>
+				</div>
+				<div class="more">
+					<ul>
+					   <li ng-repeat="t in list.three">
+					   		<div class="quan">
+					   			<div class="quan_L">星</div>
+					   			<div class="quan_R">
+					   				<p>星光云</p>
+					   				<p>5小时前	<span>0</span>次阅读</p>
+					   			</div>
+					   		</div>
+					   		<p class="size">{{t.h5}}</p>
+					   		<div class="con">
+					   			{{t.con}}
+					   		</div>
+					   		<div class="imgges">
+					   			<div class="imgges_left"><img src="{{t.con_img}}"></div>
+					   			<div class="imgges_right"></div>
+					   		</div>
+					   		<div class="zan">
+					   			<div class="zan_L">
+					   				来自:<span>{{v.zan}}</span>等3个饭圈
+					   			</div>
+					   			<div class="zan_R">
+					   				<span><i class="fa fa-fw fa-hand-o-up"></i>赞</span>
+					   				<span><i class="fa fa-fw fa-hand-o-up"></i>0</span>
+					   			</div>
+					   		</div>
+					   </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		

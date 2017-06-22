@@ -1,0 +1,396 @@
+
+ <header id="recommendHead">
+            <a href="javascript:void(0);" id="city">北京市 <i class="fa fa-chevron-down"></i></a>
+            <input type="text" id="search" placeholder="影院、影片、演出、明星"/>
+	</header>
+	<div id="content">
+		
+
+<!--轮播图-->
+<div class="swiper-container a">
+    <ul class="swiper-wrapper">
+        <li class="swiper-slide" ng-repeat="bannerImg in banner"><img src="img/{{bannerImg.src}}"></li>
+    </ul>
+    <p class="swiper-pagination1" style="position:absolute;bottom:5px;z-index:9999;text-align:center;"></p>
+</div>
+<!--icon导航-->
+<div id="iconNav">
+    <ul>
+        <li ng-repeat="iconsrc in iconImg"><a href=""><img src="img/{{iconsrc.src}}" alt=""/><p>{{iconsrc.iconText}}</p></a></li>
+    </ul>
+</div>
+<!--糯米-->
+<div id="mi" class="clearfix">
+    <div class="mi1">
+        <a href="">
+            <dl class="clearfix">
+                <dt><p>大片热映</p><p>惠看电影</p></dt>
+                <dd><img src="https://gss0.baidu.com/70cFfyinKgQFm2e88IuM_a/bainuo_cmovie/pic/item/86d6277f9e2f0708f8492175e324b899a901f273.png" alt=""/></dd>
+            </dl>
+        </a>
+    </div>
+    <div class="mi2">
+        <a href="">
+            <dl>
+                <dt><p>欢乐六一</p><p>低至18元</p></dt>
+                <dd><img src="https://gss0.baidu.com/70cFfyinKgQFm2e88IuM_a/bainuo_cmovie/pic/item/9213b07eca8065389ca55f1d9ddda144ad348275.png" alt=""/></dd>
+            </dl>
+        </a>
+    </div>
+</div>
+<!--特惠-->
+<div id="cheapMore">
+    <div class="swiper-container e">
+        <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+                <a  href="view/fqq/view/buyTickets.html">
+                    <img src="img/s1.jpg" alt=""/>
+                    <p>加勒比海盗5:</p>
+                    <p>59.2万人想看</p>
+                </a>
+            </li>
+            <li class="swiper-slide">
+                <a href="view/fqq/view/buyTickets.html">
+                    <img src="img/s2.jpg" alt=""/>
+                    <p>摔跤吧！ 爸爸</p>
+                    <p><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half"></i>   9.6</p>
+                </a>
+            </li>
+            <li class="swiper-slide">
+                <a  href="view/fqq/view/buyTickets.html">
+                    <img src="img/s3.jpg" alt=""/>
+                    <p>异星觉醒</p>
+                    <p><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>   8.0</p>
+                </a>
+            </li>
+            <li class="swiper-slide">
+                <a  href="view/fqq/view/buyTickets.html">
+                    <img src="img/s4.jpg" alt=""/>
+                    <p>银河护卫队2</p>
+                    <p><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half"></i>   8.6</p>
+                </a>
+            </li>
+            <li class="swiper-slide">
+                <a  href="view/fqq/view/buyTickets.html">
+                    <img src="img/s5.jpg" alt=""/>
+                    <p>抢红</p>
+                    <p><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half"></i>   7.2</p>
+                </a>
+            </li>
+            <li class="swiper-slide">
+                <a href="">
+                    <img src="img/s6.jpg" alt=""/>
+                    <p>守护者:世纪..</p>
+                    <p><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half"></i>   8.0</p>
+                </a>
+            </li>
+            <li class="swiper-slide">
+                <a href="">
+                    <img src="img/s7.jpg" alt=""/>
+                    <p>当怪物来敲门</p>
+                    <p><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half"></i>   8.0</p>
+                </a>
+            </li>
+            <li class="swiper-slide">
+                <a href="">
+                    <img src="img/s8.jpg" alt=""/>
+                    <p>速度与激情8</p>
+                    <p><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half"></i>   9.3</p>
+                </a>
+            </li>
+            <li><a href="">全部影片</a></li>
+        </ul>
+    </div>
+</div>
+<!--全部影院-->
+<div id="allCinma">
+    <ul>
+        <li>
+            <a href="">
+                <p>首都影院（昌平店）</p>
+                <p class="clearfix"><span>北京市昌平区鼓楼南环路金隅万科广场8层</span><span>7.3km</span></p>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <p>昌平保利影剧院（昌平店）</p>
+                <p class="clearfix"><span>北京市昌平区鼓楼南街佳莲时代广场</span><span>7.7km</span></p>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <p>大地影院（北京昌平菓岭假日广场店）</p>
+                <p class="clearfix"><span>北京市昌平区昌崔路203号菓岭广场4楼大地数字...</span><span>7.3km</span></p>
+            </a>
+        </li>
+    </ul>
+    <div class="allCinma"><a href="">全部影院 ></a></div>
+</div>
+<!--热门演出   轮播b-->
+<div class="hotShow">
+    <div class="hotShow-title clearfix">
+        <div>热门演出</div>
+        <div class="swiper-pagination2"></div>
+        <a href="">更多 ></a>
+    </div>
+    <div class="swiper-container b">
+        <ul class="swiper-wrapper">
+            <li class="swiper-slide clearfix">
+                <div>
+                    <a href="">
+                        <img src="img/hot1.jpg" alt=""/>
+                        <p>2017 Liam Gallagher北京...</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+                        <img src="img/hot2.jpg" alt=""/>
+                        <p>开心麻花爆笑舞台剧《夏洛特...</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+                        <img src="img/hot3.jpg" alt=""/>
+                        <p>ofo青睐北京演唱会</p>
+                    </a>
+                </div>
+            </li>
+            <li class="swiper-slide clearfix">
+                <div>
+                    <a href="">
+                        <img src="img/hot4.jpg" alt=""/>
+                        <p>开心麻花《爷们儿》爆笑舞台剧</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+                        <img src="img/hot5.jpg" alt=""/>
+                        <p>【第二张只需50元】开心麻花...</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+                        <img src="img/hot6.jpg" alt=""/>
+                        <p>【第二张只需50元】开心麻花...</p>
+                    </a>
+                </div>
+            </li>
+            <li class="swiper-slide clearfix">
+                <div>
+                    <a href="">
+                        <img src="img/hot7.jpg" alt=""/>
+                        <p>开心麻花《爷们儿》爆笑舞台剧</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+                        <img src="img/hot8.jpg" alt=""/>
+                        <p>【第二张只需50元】开心麻花...</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+                        <img src="img/hot9.jpg" alt=""/>
+                        <p>【第二张只需50元】开心麻花...</p>
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--优质特惠   轮播c-->
+<div class="hotShow">
+    <div class="hotShow-title clearfix">
+        <div>优质特惠</div>
+        <div class="swiper-pagination3"></div>
+        <a href="">更多 ></a>
+    </div>
+    <div class="swiper-container c">
+        <ul class="swiper-wrapper">
+            <li class="swiper-slide clearfix">
+                <div>
+                    <a href="">
+                        <img src="img/cheap1.jpg" alt=""/>
+                        <p>开心麻花《爷们儿》爆笑舞台剧</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+                        <img src="img/cheap2.jpg" alt=""/>
+                        <p>大型滑稽戏《皇帝勿急急太监...</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+                        <img src="img/cheap3.jpg" alt=""/>
+                        <p>拿大顶第35轮专场-默剧《不言...</p>
+                    </a>
+                </div>
+            </li>
+            <li class="swiper-slide clearfix">
+                <div>
+                    <a href="">
+                        <img src="img/cheap4.jpg" alt=""/>
+                        <p>开心麻花《爷们儿》爆笑舞台剧</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+                        <img src="img/cheap5.jpg" alt=""/>
+                        <p>【第二张只需50元】开心麻花...</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+                        <img src="img/cheap6.jpg" alt=""/>
+                        <p>【第二张只需50元】开心麻花...</p>
+                    </a>
+                </div>
+            </li>
+            <li class="swiper-slide clearfix">
+                <div>
+                    <a href="">
+                        <img src="img/cheap7.jpg" alt=""/>
+                        <p>开心麻花《爷们儿》爆笑舞台剧</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+                        <img src="img/cheap8.jpg" alt=""/>
+                        <p>【第二张只需50元】开心麻花...</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+                        <img src="img/cheap9.jpg" alt=""/>
+                        <p>【第二张只需50元】开心麻花...</p>
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--轮播2     轮播d-->
+<div id="carousel2">
+    <div class="swiper-container d" style="position:relative;">
+        <ul class="swiper-wrapper">
+            <li class="swiper-slide"><img src="img/banner10.jpg" alt=""/></li>
+            <li class="swiper-slide"><img src="img/banner8.jpg" alt=""/></li>
+            <li class="swiper-slide"><img src="img/banner9.jpg" alt=""/></li>
+        </ul>
+        <p class="swiper-pagination4" style="position:absolute;bottom:5px;z-index:99999;text-align:center;">
+    </div>
+</div>
+	</div>
+
+
+
+
+
+
+<!--&lt;!&ndash;糯米&ndash;&gt;-->
+<!--<div id="mi" class="clearfix">-->
+    <!--<div class="mi1">-->
+        <!--<a href="">-->
+            <!--<dl class="clearfix">-->
+                <!--<dt><p>大片热映</p><p>惠看电影</p></dt>-->
+                <!--<dd><img src="https://gss0.baidu.com/70cFfyinKgQFm2e88IuM_a/bainuo_cmovie/pic/item/86d6277f9e2f0708f8492175e324b899a901f273.png" alt=""/></dd>-->
+            <!--</dl>-->
+        <!--</a>-->
+    <!--</div>-->
+    <!--<div class="mi2">-->
+        <!--<a href="">-->
+            <!--<dl>-->
+                <!--<dt><p>欢乐六一</p><p>低至18元</p></dt>-->
+                <!--<dd><img src="https://gss0.baidu.com/70cFfyinKgQFm2e88IuM_a/bainuo_cmovie/pic/item/9213b07eca8065389ca55f1d9ddda144ad348275.png" alt=""/></dd>-->
+            <!--</dl>-->
+        <!--</a>-->
+    <!--</div>-->
+<!--</div>-->
+<!--&lt;!&ndash;特惠&ndash;&gt;-->
+<!--<div id="cheapMore">-->
+    <!--<div class="swiper-container e">-->
+        <!--<ul class="swiper-wrapper">-->
+            <!--<li class="swiper-slide">-->
+                <!--<a href="">-->
+                    <!--<img src="img/s1.jpg" alt=""/>-->
+                    <!--<p>加勒比海盗5:</p>-->
+                    <!--<p>59.2万人想看</p>-->
+                <!--</a>-->
+            <!--</li>-->
+            <!--<li class="swiper-slide">-->
+                <!--<a href="">-->
+                    <!--<img src="img/s2.jpg" alt=""/>-->
+                    <!--<p>摔跤吧！ 爸爸</p>-->
+                    <!--<p><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half"></i>   9.6</p>-->
+                <!--</a>-->
+            <!--</li>-->
+            <!--<li class="swiper-slide">-->
+                <!--<a href="">-->
+                    <!--<img src="img/s3.jpg" alt=""/>-->
+                    <!--<p>异星觉醒</p>-->
+                    <!--<p><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>   8.0</p>-->
+                <!--</a>-->
+            <!--</li>-->
+            <!--<li class="swiper-slide">-->
+                <!--<a href="">-->
+                    <!--<img src="img/s4.jpg" alt=""/>-->
+                    <!--<p>银河护卫队2</p>-->
+                    <!--<p><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half"></i>   8.6</p>-->
+                <!--</a>-->
+            <!--</li>-->
+            <!--<li class="swiper-slide">-->
+                <!--<a href="">-->
+                    <!--<img src="img/s5.jpg" alt=""/>-->
+                    <!--<p>抢红</p>-->
+                    <!--<p><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half"></i>   7.2</p>-->
+                <!--</a>-->
+            <!--</li>-->
+            <!--<li class="swiper-slide">-->
+                <!--<a href="">-->
+                    <!--<img src="img/s6.jpg" alt=""/>-->
+                    <!--<p>守护者:世纪..</p>-->
+                    <!--<p><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half"></i>   8.0</p>-->
+                <!--</a>-->
+            <!--</li>-->
+            <!--<li class="swiper-slide">-->
+                <!--<a href="">-->
+                    <!--<img src="img/s7.jpg" alt=""/>-->
+                    <!--<p>当怪物来敲门</p>-->
+                    <!--<p><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half"></i>   8.0</p>-->
+                <!--</a>-->
+            <!--</li>-->
+            <!--<li class="swiper-slide">-->
+                <!--<a href="">-->
+                    <!--<img src="img/s8.jpg" alt=""/>-->
+                    <!--<p>速度与激情8</p>-->
+                    <!--<p><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half"></i>   9.3</p>-->
+                <!--</a>-->
+            <!--</li>-->
+            <!--<li><a href="">全部影片</a></li>-->
+        <!--</ul>-->
+    <!--</div>-->
+<!--</div>-->
+<!--&lt;!&ndash;全部影院&ndash;&gt;-->
+<!--<div id="allCinma">-->
+    <!--<ul>-->
+        <!--<li ng-repeat="allcina in allmovie">-->
+            <!--<a href="">-->
+                <!--<p>{{allcina.movieShop}}</p>-->
+                <!--<p class="clearfix"><span>{{allcina.address}}</span><span>{{allcina.distance}}</span></p>-->
+            <!--</a>-->
+        <!--</li>-->
+    <!--</ul>-->
+    <!--<div class="allCinma"><a href="">全部影院 ></a></div>-->
+<!--</div>-->
+<!--&lt;!&ndash;热门演出   轮播b&ndash;&gt;-->
+<!--<div class="hotShow">-->
+    <!--<div class="hotShow-title clearfix">-->
+        <!--<div>热门演出</div>-->
+        <!--<div class="swiper-pagination2"></div>-->
+        <!--<a href="">更多 ></a>-->
+    <!--</div>-->
+    <!--<div class="swiper-container b">-->
+        <!--<ul class="swiper-wrapper">-->
+            <!--<li class="swiper-slide clearfix">-->
+                <!--<div ng-repeat="hot1 in hotmovie1">-->

@@ -1,0 +1,108 @@
+@charset "utf-8";
+*{
+    margin: 0;padding: 0;
+}
+html,body,#mainBox{
+    width: 100%;
+    height: 100%;
+    background: #F4F4F4;
+   
+}
+#mainBox{
+    display: flex;
+    flex-direction: column;
+}
+#header{
+    height: 6rem;
+    background: #02D1CB;
+    background-image: url(../img/headbg.jpg);
+    background-size: 100% 100%;
+    text-align: center;
+//  position: relative;
+    span{
+        display: inline-block;
+        width: 3.2rem ;
+        height: 3.2rem ;
+//      position: absolute;
+        margin-top: 30px;
+      
+        img{
+           width: 100%;
+        }
+    }
+}
+
+#mainCont{
+    flex: 1;
+     overflow: auto;
+//  border: 1px solid red;
+   
+}
+#pay{
+       display: flex;
+       flex-direction: row;
+       padding:10px 0;
+        background: white;
+        div:first-child{
+            display: inline-block;
+            width: 50%;
+            text-align: center;
+            img{
+                width: 1rem;
+            }
+        }
+        div:last-child{
+             display: inline-block;
+            width: 50%;
+            text-align: center;
+             img{
+                width: 1rem;
+            }
+        }
+    }
+
+#personList{
+    list-style: none;
+    li{
+        display: flex;
+        height: 2.2rem;
+        padding: 0 .5rem;
+         background: white;
+//      border: 1px solid red;
+        line-height: 2.2rem;
+        margin-top: 1px;
+//      position: relative;
+        span:first-child{
+            width: 2rem;
+            height: 100%;
+            font-size: 1.2rem;
+            color: #ccc;
+            margin-top: .6rem;
+            
+        }
+       div{
+            flex-grow: 1;
+            display: flex;
+            p{
+               flex-grow: 1;            
+            }
+            a{
+               text-align: end;
+            }
+            .a{
+                font-size: .5rem;
+            }
+        }
+    }
+    li:nth-child(1),li:nth-child(6),li:nth-child(4){
+        margin-top: 10px;
+    }
+}
+#bottom-btn{
+   
+}
+
+//#footer{
+//  height: 2rem;
+//  background: #007AFF;
+//}

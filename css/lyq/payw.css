@@ -1,0 +1,65 @@
+@charset "UTF-8";
+a {
+  text-decoration: none;
+  color: #CCCCCD; }
+
+html {
+  font-family: "微软雅黑";
+  background: #F4F4F4; }
+
+html, body, #mainBox {
+  width: 100%;
+  height: 100%; }
+
+#mainBox {
+  display: flex;
+  flex-direction: column; }
+
+#mainCont {
+  overflow: auto;
+  flex: 1; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+#payment {
+  list-style: none;
+  display: flex;
+  background: white; }
+  #payment li {
+    flex: 1;
+    text-align: center;
+    padding: .5rem 0; }
+    #payment li a {
+      font-size: .75rem;
+      color: #202020; }
+
+.cont {
+  text-align: center; }
+
+#l-img {
+  display: inline-block;
+  width: 5.2rem;
+  height: 3rem;
+  margin-top: 100px; }
+  #l-img img {
+    width: 100%; }
+
+.ju {
+  margin: 30px 0; }
+
+.movie-href {
+  font-size: .75rem;
+  color: #E1E1E1;
+  text-align: center; }
+  .movie-href a {
+    color: #007AFF;
+    text-decoration: underline; }
+
+.bottom {
+  text-align: center; }
+  .bottom p {
+    font-size: .7rem; }
+
+/*# sourceMappingURL=payw.css.map */

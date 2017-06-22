@@ -1,0 +1,11 @@
+{
+  "moreMember":[
+    {"bgModel":"member-bg1.jpg","brand":"brand1.jpg","name":"【CGV星聚汇影城】","details":"多年有效期可选年卡赠10元影券","price":"售价:40起"},
+    {"bgModel":"member-bg1.jpg","brand":"brand2.jpg","name":"【大地影院】","details":"多年有效期可选年卡赠8元影券","price":"售价:30起"},
+    {"bgModel":"member-bg2.jpg","brand":"brand3.jpg","name":"【万达影城】","details":"购票超低价另送10元影券","price":"售价:40"},
+    {"bgModel":"member-bg2.jpg","brand":"brand4.jpg","name":"【横店电影城】","details":"购票超低价首单折上折","price":"售价:30"},
+    {"bgModel":"member-bg1.jpg","brand":"brand6.jpg","name":"【中国国际影城】","details":"购票超低价首单折上折","price":"售价:30"},
+    {"bgModel":"member-bg2.jpg","brand":"brand7.jpg","name":"【保利国际影城】","details":"多年有效期可选年卡赠10元影券","price":"售价:30起"},
+    {"bgModel":"member-bg1.jpg","brand":"brand8.jpg","name":"【幸福蓝海国际影城】","details":"购票超低价另赠10元影券","price":"售价:60"}
+  ]
+}

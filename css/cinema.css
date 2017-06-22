@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.content {
+  width: 100%; }
+  .content .favourable {
+    width: 100%;
+    padding-left: 1rem;
+    padding-bottom: .9rem;
+    border-bottom: 1px solid #b3b3b3; }
+    .content .favourable div {
+      margin-top: .3rem; }
+      .content .favourable div:nth-child(1) {
+        font-size: .7rem;
+        color: #313131; }
+      .content .favourable div:nth-child(2) {
+        font-size: .5rem;
+        color: #a5a5a5; }
+      .content .favourable div:nth-child(3) {
+        font-size: .5rem; }
+        .content .favourable div:nth-child(3) span {
+          display: inline-block;
+          margin: .1rem; }
+          .content .favourable div:nth-child(3) span:nth-child(1) {
+            width: .8rem;
+            height: .8rem;
+            text-align: center;
+            line-height: .6rem;
+            border: 1px solid #fcb732;
+            color: #fcb732; }
+          .content .favourable div:nth-child(3) span:nth-child(2) {
+            width: 1.3rem;
+            height: .7rem;
+            text-align: center;
+            line-height: .6rem;
+            border: 1px solid #ff934b;
+            color: #ff934b; }
+          .content .favourable div:nth-child(3) span:nth-child(3) {
+            width: 1.3rem;
+            height: .7rem;
+            text-align: center;
+            line-height: .6rem;
+            border: 1px solid #9fda4e;
+            color: #9fda4e; }
+          .content .favourable div:nth-child(3) span:nth-child(4) {
+            width: 2.3rem;
+            height: .7rem;
+            text-align: center;
+            line-height: .6rem;
+            border: 1px solid #fcbb32;
+            color: #fcbb32; }
+          .content .favourable div:nth-child(3) span:nth-child(5) {
+            width: 2rem;
+            height: .7rem;
+            text-align: center;
+            line-height: .6rem;
+            border: 1px solid #fcbb32;
+            color: #fcbb32; }
+      .content .favourable div:nth-child(4) {
+        width: 100%; }
+        .content .favourable div:nth-child(4) span {
+          display: inline-block; }
+          .content .favourable div:nth-child(4) span:nth-child(1) {
+            width: .8rem;
+            height: .8rem;
+            border-radius: 50%;
+            background: #ff4418;
+            color: white;
+            font-size: .7rem;
+            text-align: center;
+            line-height: .8rem; }
+          .content .favourable div:nth-child(4) span:nth-child(2) {
+            font-size: .5rem;
+            color: #a9a9a9; }
+          .content .favourable div:nth-child(4) span:nth-child(3) {
+            margin-left: 5rem;
+            font-size: .6rem;
+            color: #f94f5d; }
+          .content .favourable div:nth-child(4) span:nth-child(4) {
+            font-size: .5rem;
+            color: #a9a9a9; }
+
+.movieTit li a:hover i {
+  color: red;
+  transform: rotate(180deg); }
+
+/*# sourceMappingURL=cinema.css.map */

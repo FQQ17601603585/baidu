@@ -1,0 +1,108 @@
+
+		<div class="box"  style="background: #fff;">
+			
+			<header id="toubu">
+				<span> <img  src="img/search_1338a66.png"/></span>
+				<input type="text" name="" id="" value="" placeholder="搜索演出" />
+			</header>
+			<div class="content">
+				<!--轮播图-->
+				<div class="swiper-container" style="margin-bottom: 1rem;">
+					<div class="swiper-wrapper" >
+						<div class="swiper-slide" ng-repeat="i in Carousel">
+							<img ng-src="img/{{i.img}}"/>							
+						</div>			
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+				<!--字体图标-->
+				<ul class="icon">
+					<li  ng-repeat="j in ico"><a href="view/details.html"><img src="img\{{j.img}}"/><br />{{j.name}}</a></li>
+				</ul>
+				<!--重磅推荐-->
+				<div class="groom"><p><span>重磅推荐</span>   2017 五月天  LIFE [ 人生无限公司...</p>   </div>
+				<!--空白的条-->
+				<div class="blank"></div>
+				<!--特价票品-->
+				<div class="bargainPrice">
+					<dl style="border-right: 1px solid #f3f3f3;border-bottom:1px solid #f3f3f3">
+						<dt style="color: red;"><span>特价票品</span><br /><span>特惠等你来</span></dt>
+						<dd><img src='img\inco3.jpg'/></dd>
+					</dl>
+					<dl>
+						<dt><span>免费观剧</span><br /><span>五月福利周</span></dt>
+						<dd><img src='img\icon1.jpg'/></dd>
+					</dl>					
+				</div>
+				<!--演出日历-->
+				<div class="show">
+					<div class="bargainPrice">
+					<dl>
+						<dt ><span>演出日历</span><br /><span>纪念日有我</span></dt>
+						<dd><img src='img\icon.jpg'/></dd>
+					</dl>
+					<dl style="border-left: 1px solid #f3f3f3;border-top:1px solid #f3f3f3">
+						<dt style="color: red;"><span>精彩剧院</span><br /><span>场馆任我行</span></dt> 
+						<dd><img src='img\inco2.jpg'/></dd>
+					</dl>					
+				</div>
+				</div>
+				<!--空白的条-->
+				<div class="blank"></div>
+				<div class="hot">
+					<p>热门排行榜</p>
+					<!--第一-->
+					<div class="hotFilm">
+						<dl ng-repeat="q in hot">
+						<dt><img src="img/{{q.img}}"/> <span>1</span></dt>
+						<dd>
+							<p>{{q.name}}<span>座</span></p>
+							<p><span class="fa fw fa-clock-o"></span>{{q.date}}</p>
+							<p><span class="fa fw fa-map-marker"></span>{{q.position}}</p>
+							<p>￥80 - ￥3240 <span>5折</span><span>售票中</span></p>
+						</dd>
+					</dl>
+					<!--糯米独家-->
+					<div class="welfare"><p>糯米独家福利 : 购同价位票2张，享双重优惠..</p></div>						
+					</div>
+					<!--第二-->
+					<div class="hotFilm2">
+						<dl>
+						<dt><img src="img/timg (5).jpg"/> <span>2</span></dt>
+						<dd>
+							<p>ofo 轻眯北京演唱会</p>
+							<p><span class="fa fw fa-clock-o"></span>2017-07-02</p>
+							<p><span class="fa fw fa-map-marker"></span>北京市，北京工人体育场</p>
+							<p>￥99  - ￥599 <span>预售中</span></p>
+						</dd>
+					</dl>					
+					</div>
+					<!--第三-->
+					<div class="hotFilm3">
+						<dl>
+						<dt><img src="img/timg (6).jpg"/> <span>3</span></dt>
+						<dd>
+							<p>2017 Liam GallAgher 北京演唱会</p>
+							<p><span class="fa fw fa-clock-o"></span>2017-08-10</p>
+							<p><span class="fa fw fa-map-marker"></span>北京市，国家奥林匹克体育中心</p>
+							<p>￥480 - ￥1480 <span>预售中</span></p>
+						</dd>
+					</dl>					
+					</div>	
+					<!--第四-->
+					<div class="hotFilm3">
+						<dl ng-repeat="s in hotFilm3">
+						<dt><img src="img/{{s.img}}"/></dt>
+						<dd>
+							<p>{{s.name}}</p>
+							<p><span class="fa fw fa-clock-o"></span>{{s.date}}</p>
+							<p><span class="fa fw fa-map-marker"></span>{{s.position}}</p>
+							<p>{{s.price}}<span>{{s.state}}</span></p>
+						</dd>
+					</dl>					
+					</div>					
+				</div>
+			</div>
+			 
+		</div>
+

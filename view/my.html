@@ -1,0 +1,69 @@
+
+		<div id="mainBox">
+			
+			<div id="header">
+					<span>
+						<img src="img/my.png" alt="" />
+					</span>
+				
+			</div>
+			
+			<div id="mainCont">
+				<!--支付状态-->
+				<div id="pay">
+						<div id="payment">
+							<img src="img/fu.png" alt="" /><br />
+							待付款
+						</div>
+						<div id="Paid">
+							<img src="img/1475052954836.png"/><br />
+							已付款
+						</div>
+				</div>
+				<!--个人中心列表-->
+				
+					<ul id="personList">
+							<li ng-repeat="name in personList">
+								<span class="{{name.icon}}"></span>
+								<div>
+										<p>{{name.tit}}</p>
+								<a href=""><span class="{{name.rightclass}}"></span></a>
+								</div>
+							
+							</li>	
+							
+					</ul>
+					<!--底部-->
+					<p id="bottom-btn">
+						<a href=""><button class="btn btn-default">登录</button></a>
+						<a href="view/registe.html"><button class="btn btn-default">注册</button></a>
+					</p>
+					<div style="text-align: center;">
+						<p>如有质疑，可致电（9:00-21:00）</p>
+						<p>客服电话：400-553-5468</p>
+					</div>
+					
+			
+			</div>
+			
+			
+			<div id="footer">
+				
+			</div>
+		</div>
+		<script>
+				(function(doc){
+						function changeSize(){
+							var size=doc.documentElement.clientWidth/320*20;
+							doc.querySelector('html').style.fontSize=size+'px';
+						}
+						//用户缩放浏览器窗口大小时
+						window.onresize=changeSize;
+						changeSize();
+					})(document);
+					
+		</script>
+		<script>
+			var a=new IScroll("#mainCont")
+		
+		</script>

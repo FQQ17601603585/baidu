@@ -1,0 +1,67 @@
+{
+ 	
+    "personList": [
+      {
+     	"icon":"glyphicon glyphicon-cd",
+     	"tit":"我的会员卡",
+     	"href":"",
+     	"rightclass":"glyphicon glyphicon-menu-right a"
+      },
+     {
+     	"icon":"glyphicon glyphicon-cd",
+     	"tit":"我的抵用券",
+     	"href":"",
+     	"rightclass":"glyphicon glyphicon-menu-right a"
+      },
+      {
+     	"icon":"glyphicon glyphicon-cd",
+     	"tit":"我的兑换码",
+     	"href":"",
+     	"rightclass":"glyphicon glyphicon-menu-right a"
+      },
+     {
+     	"icon":"glyphicon glyphicon-cd",
+     	"tit":"演出收藏",
+     	"href":"",
+     	"rightclass":"glyphicon glyphicon-menu-right a"
+      },
+      {
+     	"icon":"glyphicon glyphicon-cd",
+     	"tit":"我的地址",
+     	"href":"",
+     	"rightclass":"glyphicon glyphicon-menu-right a"
+      },
+     {
+     	"icon":"glyphicon glyphicon-cd",
+     	"tit":"我的评论",
+     	"href":"",
+     	"rightclass":"glyphicon glyphicon-menu-right a"
+      },
+      {
+     	"icon":"glyphicon glyphicon-cd",
+     	"tit":"我的想看",
+     	"href":"",
+     	"rightclass":"glyphicon glyphicon-menu-right a"
+      },
+      {
+     	"icon":"glyphicon glyphicon-cd",
+     	"tit":"我的约票活动",
+     	"href":"",
+     	"rightclass":"glyphicon glyphicon-menu-right a"
+      },
+     {
+     	"icon":"glyphicon glyphicon-cd",
+     	"tit":"演出消息",
+     	"href":"",
+     	"rightclass":"glyphicon glyphicon-menu-right a"
+      },
+      {
+     	"icon":"glyphicon glyphicon-cd",
+     	"tit":"意见反馈",
+     	"href":"",
+     	"rightclass":"glyphicon glyphicon-menu-right a"
+      }
+      ]
+
+    
+}

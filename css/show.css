@@ -1,0 +1,306 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+
+#toubu {
+  width: 100%;
+  height:2.5rem;
+  background: #ffffff;
+  text-align: center;
+  line-height: 2.5rem;
+  line-height: 2rem; 
+  position: relative;}
+  #toubu span {
+    z-index: 99;
+    width: .7rem;
+    height: .7rem;
+    position: absolute;
+    left:1.5rem;
+    top: .5rem; }
+    #toubu span img {
+      width: 100%; }
+  #toubu input {
+    position: relative;
+    width: 90%;
+    height: 1.2rem;
+    background: #f2f2f2;
+    border-radius: 2px;
+    outline: none;
+    border: none;
+    font-size: .6rem;
+    padding-left: 1rem; }
+
+.content {
+  width: 100%;
+  -webkit-flex: 1;
+  overflow: auto; }
+  .content .swiper-container {
+    width: 100%; }
+    .content .swiper-container .swiper-slide {
+      width: 100%; }
+      .content .swiper-container .swiper-slide img {
+        width: 100%; }
+  .content .icon {
+    width: 100%;
+    display: flex;
+    -webkit-flex-direction: row;
+    -webkit-justify-content: space-around;
+    list-style: none;
+    padding-bottom: .4rem;
+    border-bottom: .2px solid #f9f9f9; }
+    .content .icon li {
+      width: 24%;
+      text-align: center; }
+      .content .icon li a {
+        text-decoration: none;
+        font-size: 0.48rem;
+        color: #8a8a8a; }
+      .content .icon li img {
+        width: 80%; }
+  .content .groom {
+    width: 100%;
+    height:1.2rem;
+    line-height: 1.2rem; }
+    .content .groom p {
+      padding-left: .4rem;
+      width: 100%;
+      font-size: .4rem;
+      color: #666666; }
+      .content .groom p span {
+        font-size: .7rem;
+        color: red;
+        padding-right: .4rem; }
+  .content .blank {
+    width: 100%;
+    height: .4rem;
+    background: #f4f6f5; }
+  .content .bargainPrice {
+    width: 100%;
+    display: flex;
+    -webkit-flex-direction: row;
+    padding: 0.48rem; }
+    .content .bargainPrice dl {
+      display: inline-block;
+      width: 50%;
+      display: flex;
+      -webkit-flex-direction: row; }
+      .content .bargainPrice dl dt {
+        width: 50%; }
+        .content .bargainPrice dl dt span {
+          display: block; }
+          .content .bargainPrice dl dt span:nth-child(1) {
+            font-size: .85rem;
+            font-weight: 500; }
+          .content .bargainPrice dl dt span:nth-child(2) {
+            font-size: 1rem; }
+      .content .bargainPrice dl dd {
+        width: 50%;
+        margin-top: -4px; }
+        .content .bargainPrice dl dd img {
+          width: 100%;
+          vertical-align: middle; }
+  .content .show {
+    margin-top: -1.5rem; }
+  .content .hot {
+    width: 100%; }
+    .content .hot p {
+      padding-left: 0.4;
+      font-size: .7rem;
+      color: #696969;
+      border: 1px solid #f5f5f5; }
+  .content .hotFilm {
+    width: 100%; }
+    .content .hotFilm dl {
+      border-top: 1px solid #f6f6f6;
+      width: 100%;
+      display: flex;
+      -webkit-flex-direction: row; }
+      .content .hotFilm dl dt {
+        margin-left: .4rem;
+        width: 25%;
+        position: relative; }
+        .content .hotFilm dl dt span {
+          width: .8rem;
+          height: .8rem;
+          background: #fd555c;
+          text-align: center;
+          line-height: .8rem;
+          position: absolute;
+          left: .1rem;
+          top: 0.25rem;
+          color: white;
+          opacity: .8; }
+        .content .hotFilm dl dt img {
+          width: 100%; }
+      .content .hotFilm dl dd {
+        padding-left: .4rem;
+        width: 75%; }
+        .content .hotFilm dl dd p {
+          border: none;
+          color: #848388;
+          margin-top: .25rem; }
+          .content .hotFilm dl dd p:nth-child(1) {
+            font-size: .85rem;
+            color: #131218; }
+            .content .hotFilm dl dd p:nth-child(1) span {
+              display: block;
+              width: .85rem;
+              height: .85rem;
+              background: red;
+              text-align: center;
+              line-height: .85rem;
+              color: white;
+              font-size: .6rem;
+              padding: .1rem; }
+          .content .hotFilm dl dd p:nth-child(2) span {
+            font-size: .3rem;
+            display: inline-block; }
+          .content .hotFilm dl dd p:nth-child(4) {
+            display: inline-block;
+            color: red; }
+            .content .hotFilm dl dd p:nth-child(4) span {
+              display: inline-block;
+              margin-left: .5rem; }
+              .content .hotFilm dl dd p:nth-child(4) span:nth-child(1) {
+                border: 1px solid #d799aa;
+                color: #d799aa; }
+              .content .hotFilm dl dd p:nth-child(4) span:nth-child(2) {
+                border: 1px solid #efc785;
+                color: #efc785; }
+  .content .welfare {
+    width: 100%;
+    height: 1.5rem;
+    text-align: center;
+    padding-left: .25rem; }
+    .content .welfare p {
+      width: 98%;
+      height: .8rem;
+      background: #f4f6f5;
+      font-size: 0.58rem;
+      text-align: center;
+      line-height: .8rem;
+      color: #cfd1d0;
+      border-radius: 5px; }
+  .content .hotFilm2 {
+    margin-top: .25rem;
+    padding-top: .25rem;
+    width: 100%;
+    border-top: 1px solid #f6f6f6; }
+    .content .hotFilm2 dl {
+      width: 100%;
+      display: flex;
+      -webkit-flex-direction: row; }
+      .content .hotFilm2 dl dt {
+        margin-left: .4rem;
+        width: 25%;
+        position: relative; }
+        .content .hotFilm2 dl dt span {
+          width: .65rem;
+          height: .65rem;
+          background: #fb872c;
+          text-align: center;
+          line-height: 1.6rem;
+          position: absolute;
+          left: .1rem;
+          top: 0.25rem;
+          color: white;
+          opacity: .8; }
+        .content .hotFilm2 dl dt img {
+          width: 100%; }
+      .content .hotFilm2 dl dd {
+        padding-left: 1rem;
+        width: 75%; }
+        .content .hotFilm2 dl dd p {
+          border: none;
+          color: #848388;
+          font-size: .75rem;
+          margin-top: .25rem; }
+          .content .hotFilm2 dl dd p:nth-child(1) {
+            font-size: .75rem;
+            color: #131218; }
+            .content .hotFilm2 dl dd p:nth-child(1) span {
+              width: .65rem;
+              height: .65rem;
+              background: red;
+              text-align: center;
+              line-height: .65rem;
+              color: white;
+              display: inline-block; }
+          .content .hotFilm2 dl dd p:nth-child(2) span {
+            font-size: .4rem;
+            display: inline-block; }
+          .content .hotFilm2 dl dd p:nth-child(4) {
+            display: inline-block;
+            color: red; }
+            .content .hotFilm2 dl dd p:nth-child(4) span {
+              display: inline-block;
+              margin-left: .25rem; }
+              .content .hotFilm2 dl dd p:nth-child(4) span:nth-child(1) {
+                border: 1px solid #b2d2e0;
+                color: #b2d2e0; }
+  .content .hotFilm3 {
+    margin-top: .25rem;
+    padding-top: .25rem;
+    width: 100%;
+    border-top: 1px solid #f6f6f6; }
+    .content .hotFilm3 dl {
+      width: 100%;
+      display: flex;
+      -webkit-flex-direction: row; }
+      .content .hotFilm3 dl dt {
+        margin-left: .4rem;
+        width: 25%;
+        position: relative; }
+        .content .hotFilm3 dl dt span {
+          width: .65rem;
+          height: .65rem;
+          background: #feb800;
+          text-align: center;
+          line-height: .65rem;
+          position: absolute;
+          left: .12rem;
+          top: 0.25rem;
+          color: white;
+          opacity: .8; }
+        .content .hotFilm3 dl dt img {
+          width: 100%; }
+      .content .hotFilm3 dl dd {
+        padding-left: 1rem;
+        width: 75%; }
+        .content .hotFilm3 dl dd p {
+          border: none;
+          color: #848388;
+          font-size: .75rem; }
+          .content .hotFilm3 dl dd p:nth-child(1) {
+            font-size: .75rem;
+            color: #131218; }
+            .content .hotFilm3 dl dd p:nth-child(1) span {
+              width: .75rem;
+              height: .75rem;
+              background: red;
+              text-align: center;
+              line-height: .75rem;
+              color: white;
+              display: inline-block;
+              margin-top: 0.25rem; }
+          .content .hotFilm3 dl dd p:nth-child(2) {
+            margin-top: .5rem;
+            font-size: .6rem; }
+            .content .hotFilm3 dl dd p:nth-child(2) span {
+              font-size: .4rem;
+              display: inline-block; }
+          .content .hotFilm3 dl dd p:nth-child(4) {
+            font-size: .6rem;
+            display: inline-block;
+            color: red; }
+            .content .hotFilm3 dl dd p:nth-child(4) span {
+              display: inline-block;
+              margin-left: .25rem; }
+              .content .hotFilm3 dl dd p:nth-child(4) span:nth-child(1) {
+                border: 1px solid #b2d2e0;
+                color: #b2d2e0; }
+
+
+/*# sourceMappingURL=show.css.map */

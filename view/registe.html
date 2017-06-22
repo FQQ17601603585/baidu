@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+					<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, 	minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta name="format-detection" content="telephone=no, email=no" />
+     	<meta name="apple-mobile-web-app-capable" content="yes"/>
+     	<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+     	<script src="../js/jquery.min.js"></script>
+		<title></title>
+		<style>
+			*{
+				margin: 0;padding: 0;
+			}
+			html{
+				background: #F4F4F4;
+			}
+			#login{
+				margin: 20px 15px;
+			}
+			#login>div{
+				padding: 20px 15px;
+				background: white;
+				border: 1px solid #ccc;
+			}
+			#login>div>input{
+				width: 100%;border: none;
+				outline: none;
+				font-size: 16px;
+				color: #ccc;
+			}
+			a{
+				text-decoration: none;
+				color: #CCCCCC;
+			}
+			#way>a{
+				display: inline-block;
+				width: 50%;
+				font-size: 12px;
+				float: left;
+			}
+			#way>a:last-child{
+				text-align: end;
+			}
+		#btn-register{
+			display: block;
+			padding: 15px 0;
+			background: #007AFF;
+			color: white;
+			text-decoration: none;
+		}
+		
+		</style>
+	</head>
+	<body>
+		<div style="text-align: center;margin-top: 50px;">
+			<span style="display:inline-block;width: 138px;height: 46px">
+			<img src="../img/baidu.png" alt="" width="100%" />
+		</span>
+		</div>
+		
+			
+			
+		<form action="">
+			<div id="login">
+				<div>
+					<input type="text" placeholder="请输入用户名" required id="user"/>
+				</div>
+				<div style="border-top: none;">
+					<input type="password" placeholder="密码" required id="pass"/>
+				</div>
+				
+				<p style="text-align: center;margin: 20px 0">
+					<a id="btn-register" href="login.html">注册</a>
+				</p>
+				
+				
+			</div>
+		</form>
+		
+	</body>
+	<script>
+		var register=document.getElementById("btn-register")
+		register.onclick=function(){
+			
+		}
+		//本地存储登录
+			$("#btn-register").click(function(){
+			    var username = $("#user").val();
+			    var password = $("#pass").val();
+			    if(username =="" || password ==""){
+			        return alert("注册失败");
+			    }else{
+			        var arr = [{"username":username},{"password":password}];
+			        sessionStorage.setItem("username",arr[0].username);
+			        sessionStorage.setItem("password",arr[1].password);
+			        $("#user").val("");
+			        $("#pass").val("");
+			    }
+			
+			})
+	</script>
+</html>

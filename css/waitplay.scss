@@ -1,0 +1,81 @@
+@charset "utf-8";
+.waitCon{
+    width:100%;
+//  height:10.05rem;
+    .waitSlide{
+//      padding-top:12px;
+//      padding-bottom: 8px;
+         &>p{
+             padding-left:11px;
+             margin-bottom: 0;
+             padding-top:5px;
+         }
+         .swiper-container2{
+               width:100%;
+//             height:8.15rem;
+               .swiper-slide{
+                   text-align: center;
+                   position: relative;
+                   width: 80px;
+                    margin-right: 20px;
+                    img{
+                       margin-top:12px;
+                       width:4.1rem;
+                       height:5.4rem;
+                   }
+                   &>p{
+                       font-family: "微软雅黑";
+                       margin-bottom: 0;
+                       &:nth-child(2){
+                           margin-top:5px;
+                           font-size:0.6rem;
+                           color:#878787;
+                       }
+                       &:nth-child(3){
+                           margin-top:0.2rem;
+                           font-size:0.5rem;
+                           color:#B2B2B2;
+//                         background:red;
+                           &>a{
+                               width:1.05rem;
+                               height:1.05rem;
+                               border-radius: 50%;
+                               text-align: center;
+//                             background:red;
+                               border:1px solid #EAEAEA;
+                               &>i{
+                                   font-size:0.5rem;
+                                   color:#B5B5B5;
+                                   
+                               }
+                           }
+                       }
+                   }
+                   
+                   .wantSee{
+//                     text-align: center; 
+                       width:4.1rem;
+                       height:0.9rem;
+                       position: absolute;
+                       top:5rem;
+                       font-size: 9px;
+                       color:white;
+//                      left:8px;
+                       background:rgba(13,15,5,0.2);
+                   }
+                   
+               }
+         }
+    } 
+    
+    .dibline{
+          width:100%;
+          height:9px;
+          background:#F3F6F5;
+    }
+    
+    
+    
+    
+}
+
